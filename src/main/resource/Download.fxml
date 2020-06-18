@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="299.0" prefWidth="417.0" style="-fx-background-color: black;" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DownloadController">
+   <children>
+      <Label layoutX="17.0" layoutY="14.0" styleClass="label-header" text="Download" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="textField" layoutX="90.0" layoutY="112.0" opacity="0.7" promptText="type the md5 code of the file here" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0" />
+      <Label id="label-header" layoutX="17.0" layoutY="160.0" styleClass="label-bright" text="Dowload to" AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="7.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="362.0" layoutY="169.0" mnemonicParsing="false" onAction="#Handlefile" prefWidth="170.0" text="Choose the file path" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="20.0" />
+      <Line endX="200.0" layoutX="170.0" layoutY="223.0" startX="30.0" stroke="WHITE" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="20.0" />
+      <Label fx:id="result" layoutX="40.0" layoutY="230.0" prefHeight="39.0" prefWidth="337.0" styleClass="label-bright" AnchorPane.bottomAnchor="30.0" />
+   </children>
+</AnchorPane>

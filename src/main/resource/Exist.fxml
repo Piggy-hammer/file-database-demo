@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="299.0" prefWidth="417.0" style="-fx-background-color: black;" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ExistController">
+   <children>
+      <Button layoutX="14.0" layoutY="182.0" mnemonicParsing="false" onAction="#HandleMd5" prefWidth="100.0" text="md5" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="198.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Label id="label-header" layoutX="7.0" layoutY="150.0" styleClass="label-bright" text="Check in " AnchorPane.bottomAnchor="99.0" AnchorPane.leftAnchor="7.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="file" layoutX="164.0" layoutY="182.0" mnemonicParsing="false" onAction="#Handlefile" prefWidth="100.0" style=": ;" text="file path" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="99.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="315.0" layoutY="182.0" mnemonicParsing="false" onAction="#Handletype" prefWidth="100.0" style=": 1;" text="words" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Line endX="200.0" layoutX="221.0" layoutY="213.0" startX="-97.0" stroke="WHITE" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="0.0" />
+      <Label fx:id="result" layoutX="175.0" layoutY="214.0" maxWidth="90.0" styleClass="label-bright" />
+      <Label layoutX="7.0" layoutY="4.0" styleClass="label-header" text="Check Exist" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="0.0" />
+      <Label fx:id="charset" layoutX="118.0" layoutY="253.0" prefHeight="20.0" prefWidth="210.0" styleClass="label-x" textAlignment="CENTER">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textArea" layoutX="80.0" layoutY="102.0" opacity="0.7" promptText="type the md5 code or the context of file here" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="75.0" />
+   </children>
+</AnchorPane>

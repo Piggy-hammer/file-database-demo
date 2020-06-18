@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="299.0" prefWidth="417.0" style="-fx-background-color: black;" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.DeleteController">
+   <children>
+      <Label layoutX="17.0" layoutY="14.0" styleClass="label-header" text="Delete File" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="textField" layoutX="90.0" layoutY="112.0" opacity="0.7" promptText="type the md5 code or the context of file here" AnchorPane.bottomAnchor="195.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0" />
+      <Label layoutX="9.0" layoutY="136.0" styleClass="label-bright" text="Delete in" AnchorPane.bottomAnchor="138.0" AnchorPane.leftAnchor="5.0" />
+      <Button layoutX="24.0" layoutY="192.0" mnemonicParsing="false" onAction="#HandleMd5" prefWidth="100.0" text="md5" AnchorPane.bottomAnchor="140.0" AnchorPane.rightAnchor="99.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="file" layoutX="184.0" layoutY="202.0" mnemonicParsing="false" onAction="#Handlefile" prefWidth="100.0" style=": ;" text="file path" AnchorPane.bottomAnchor="140.0" AnchorPane.rightAnchor="198.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="345.0" layoutY="212.0" mnemonicParsing="false" onAction="#Handletype" prefWidth="100.0" style=": 1;" text="words" AnchorPane.bottomAnchor="140.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Line endX="100.0" layoutX="130.0" layoutY="203.0" startX="-197.0" stroke="WHITE" AnchorPane.bottomAnchor="140.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="43.0" layoutY="185.0" styleClass="label-bright" text="Or" AnchorPane.bottomAnchor="87.0" AnchorPane.leftAnchor="80.0" />
+      <Button layoutX="219.0" layoutY="178.0" mnemonicParsing="false" onAction="#Handleall" prefWidth="160.0" text="delete all the files" AnchorPane.bottomAnchor="90.0" AnchorPane.rightAnchor="20.0" />
+      <Line endX="159.0" layoutX="140.0" layoutY="213.0" stroke="WHITE" AnchorPane.bottomAnchor="90.0" AnchorPane.rightAnchor="20.0" />
+      <Label fx:id="result" layoutX="40.0" layoutY="219.0" prefWidth="337.0" styleClass="label-bright" AnchorPane.bottomAnchor="35.0" />
+      <Label fx:id="charset" layoutX="101.0" layoutY="275.0" prefWidth="215.0" styleClass="label-x" AnchorPane.bottomAnchor="7.0" />
+   </children>
+</AnchorPane>

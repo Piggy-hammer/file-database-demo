@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="299.0" prefWidth="417.0" style="-fx-background-color: black;" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.UploadController">
+   <children>
+      <Label layoutX="17.0" layoutY="14.0" styleClass="label-header" text="Upload File" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="0.0" />
+      <TextField fx:id="textField" layoutX="90.0" layoutY="112.0" opacity="0.7" promptText="type the md5 code or the context of file here" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="70.0" />
+      <Label id="label-header" layoutX="17.0" layoutY="160.0" styleClass="label-bright" text="Upload in " AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="7.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="file" layoutX="174.0" layoutY="192.0" mnemonicParsing="false" onAction="#Handlefile" prefWidth="120.0" style=": ;" text="file path" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="119.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="335.0" layoutY="202.0" mnemonicParsing="false" onAction="#Handletype" prefWidth="120.0" style=": 1;" text="words" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Line endX="200.0" layoutX="231.0" layoutY="223.0" startX="-39.0" stroke="WHITE" AnchorPane.bottomAnchor="100.0" />
+      <Label fx:id="result" layoutX="106.0" layoutY="209.0" prefWidth="220.0" styleClass="label-bright" />
+      <Label fx:id="charset" layoutX="111.0" layoutY="264.0" prefWidth="210.0" />
+   </children>
+</AnchorPane>
